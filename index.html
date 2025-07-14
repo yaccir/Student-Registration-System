@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Student Registration System</title>
+</head>
+<body>
+  <header class="header">
+   <nav class="navbar">
+    <ul>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#students">Registered Students</a></li>
+      <li><a href="https://github.com/your-username/student-registration" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+    <h1 class="heading">Student Registration System</h1>
+    <p class="description">Register Students and Manage their Records including Update and Delete Functionalities Helps You to Maintain the Record.</p>
+  </header>
+
+  <main>
+    <section class="section-registration" id="register">
+      <section class="sec1">
+        <form class="form" onsubmit="return false;" >
+          <label for="fullname">Student Name: <span>*</span></label>
+          <input class="input name" id="fullname" type="text" placeholder="Enter Full Name" required />
+
+          <label for="fathername">Father's Name: <span>*</span></label>
+          <input class="input fname" id="fathername" type="text" placeholder="Enter Father's Name" required />
+
+          <label for="mothername">Mother's Name: <span>*</span></label>
+          <input class="input mname" id="mothername" type="text" placeholder="Enter Mother's Name" required />
+
+          <label for="course">Course: <span>*</span></label>
+          <input class="input course" id="course" type="text" placeholder="Enter Course" required />
+
+          <label for="email">Email: <span>*</span></label>
+          <input class="input email" id="email" type="email"  placeholder="johndoe@mail.com" required />
+
+          <section class="innersec">
+            <label for="dob">Date of Birth: <span>*</span></label>
+            <input class="input dob" id="dob" type="date" required />
+
+            <label for="studentid">Student Id: <span>*</span></label>
+            <input class="input" id="studentid" type="text" placeholder="Student ID" required />
+          </section>
+
+          <label for="mobileno">Mobile No: <span>*</span> </label>
+          <input class="input mobileno" id="mobileno" type="tel" placeholder="Mobile No" required />
+
+          <label for="address">Address: <span>*</span></label>
+          <input class="input address" id="address" type="text" placeholder="Enter Address" required />
+
+          <button id="Register" class="registerbtn" type="button">Register</button>
+        </form>
+      </section>
+
+      <section class="sec2">
+        <img src="image/profile.jpg" class="preview" id="show" alt="Profile Pic" />
+        <label for="profilepic" class="photo-label">Upload Photo <span style="color:darkred">Less than 50kb</span></label>
+        <input type="file" id="profilepic" class="photo-input" />
+      </section>
+    </section>
+
+    <section id="students"class="section-registered">
+      <h2 class="regstuhead" >Registered Students</h2>
+      <table border="1px">
+        <thead>
+          <tr class="tableheadings">
+            <th>Id</th>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+            <th>Mobile No</th>
+            <th>DOB</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Update</th>
+            <th>Take Action</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+<footer>
+  <p class="footerpara">All Rights Reserved 2025</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
